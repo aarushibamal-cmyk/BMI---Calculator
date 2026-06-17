@@ -18,13 +18,13 @@ form.addEventListener('submit', (event) => {
         if(bmi<=18.5){
             result.innerHTML = `Your BMI is ${bmi} <p>UnderWeight</p>`
         }
-        if(bmi<=24.9){
+       else if(bmi<=24.9){
             result.innerHTML = `Your BMI is ${bmi} <p>Normal Weigth</p>`
         }
-        if(bmi<=29.9){
+       else  if(bmi<=29.9){
             result.innerHTML = `Your BMI is ${bmi} <p>Overweight</p>`
         }
-        if(bmi>=30){
+       else {
             result.innerHTML = `Your BMI is ${bmi} <p>Obese</p>`
         }
     }
